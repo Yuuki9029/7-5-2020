@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smooth</title>
+</head>
+<body>
+    <script>
+        function arr(arr0){
+            var flag = true;
+
+            if (arr0.length % 2 == 0) {
+                if (arr0[0]==arr0[arr0.length-1] && arr0[0]==(arr0[arr0.length/2-1] + arr.length/2)) {
+                    flag = true;
+                }
+                else{
+                    flag = false;
+                }
+                
+            }
+            else if (arr0.length % 2 != 0) {
+                if (arr0[0]==arr0[arr0.Length-1] && arr0[0] == arr0[(arr0.Length-1)/2]) {
+                    flag = true;
+                }
+                else{
+                    flag = false;
+                }
+                return flag;
+            }else {
+                return true;
+            }
+            // if (flag == true) {
+            //     document.write(arr0 + 'Is Smoth');
+            // }
+            // else {
+            //     document.write(arr0 + 'Is not Smoth');
+            // }
+        }
+        console.log(arr([7, 2, 2, 5, 10, 7]));
+        arr([-5, -5, 10]);
+        arr([4, 2]);
+        arr( [45, 23, 12, 33, 12, 453, -234, -45]);
+        arr([-12, 34, 40, -5, -12, 4, 0, 0, -12]);
+        arr([9, 0, 15, 9]);
+        arr([-6, 6, -6]);
+        arr([26, 26, -17]);
+        arr([-7, 5, 5, 10]);
+        arr([3, 4, 5]);
+    </script>
+</body>
+</html
